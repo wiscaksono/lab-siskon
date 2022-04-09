@@ -29,7 +29,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mb-[162px]">
+      <section className="mb-[162px]" id="praktikum">
         <div className="wrapper">
           <h3 className="text-red text-center mb-[40px]">Pilih Praktikum</h3>
           <div className="flex justify-between">
@@ -42,10 +42,10 @@ export default function Home() {
             </Link>
             <div className="">
               <div className="bg-siskon-btn rounded-[20px]">
-                <Link href="siskon">
-                  <button className="px-[144px] py-[26px]">
+                <Link href="Ski">
+                  <button className="px-[144px] py-[53px]">
                     <p className="subhead1 w-[262px] text-white">
-                      Sistem Kontrol Industri
+                      Sistem Kontrol
                     </p>
                   </button>
                 </Link>

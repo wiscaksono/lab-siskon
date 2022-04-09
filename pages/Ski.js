@@ -3,23 +3,19 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export default function Siskon() {
+export default function Ski() {
   return (
     <>
       <Navbar />
       <section className="mt-[112px] mb-[161px]">
         <div className="wrapper">
-          <h4 className="text-red mb-[20px]">Sistem Kontrol</h4>
+          <h4 className="text-red mb-[20px]">Sistem Kontrol Industri</h4>
           <div className="flex">
             <div className="w-2/12 flex gap-[15px] flex-col items-start">
-              <SideBtn href="/Siskon" name="Tugas Rumah" />
-              <SideBtn href="/Siskon" name="Materi" />
-              <SideBtn href="/Siskon" name="Jadwal Praktik" />
-              <SideBtn href="/Siskon" name="Journal" />
-              <SideBtn href="/Siskon" name="Modul" />
-              <SideBtn href="/Siskon" name="Video Materi" />
-              <SideBtn href="/Siskon" name="Data" />
-              <SideBtn href="/Siskon" name="Source Code" />
+              <SideBtn href="/Ski" name="Tugas Rumah" />
+              <SideBtn href="/#" name="Modul" />
+              <SideBtn href="/#" name="Software" />
+              <SideBtn href="/#" name="Jadwal Praktik" />
             </div>
             <div className="w-1/12" />
             <div className="w-9/12">

@@ -42,6 +42,17 @@ export default function Navbar() {
               Gallery
             </a>
           </Link>
+          <Link href="//#praktikum">
+            <a
+              className={
+                router.pathname == ("/Siskon" || "Ski")
+                  ? "active: text1 py-[3px] px-[23px] bg-red rounded-full transition-colors text-white"
+                  : "text1 py-[3px] px-[23px] bg-none rounded-full transition-colors text-black-500"
+              }
+            >
+              Praktikum
+            </a>
+          </Link>
         </div>
       </div>
     </nav>
