@@ -1,11 +1,10 @@
-import Navbar from "../components/Navbar";
 import Link from "next/link";
-import Footer from "../components/Footer";
 
-export default function Home() {
+import Wrapper from "../components/Wrapper";
+
+export default function Index() {
   return (
-    <>
-      <Navbar />
+    <Wrapper>
       <section className="mt-[122px] mb-[212px]">
         <div className="wrapper flex gap-[97px] items-center justify-between">
           <div>
@@ -33,7 +32,7 @@ export default function Home() {
         <div className="wrapper">
           <h3 className="text-red text-center mb-[40px]">Pilih Praktikum</h3>
           <div className="flex justify-between">
-            <Link href="Siskon">
+            <Link href="siskon" passHref>
               <button className="bg-ski-btn px-[144px] py-[26px] rounded-[20px] hover:shadow-red hover:shadow-2xl transition-colors">
                 <p className="subhead1 w-[262px] text-white">
                   Sistem Kontrol Industri
@@ -54,8 +53,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <Footer />
-    </>
+    </Wrapper>
   );
 }
