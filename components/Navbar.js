@@ -4,12 +4,21 @@ import { useRouter } from "next/router";
 export default function Navbar() {
   const router = useRouter();
 
+  // function checkPath(path) {
+  //   var str = path;
+  //   var rest = str.substring(0, str.lastIndexOf("/"));
+  //   var last = str.substring(str.lastIndexOf("/") + 1, str.length);
+  //   console.log(rest);
+  //   console.log(last);
+  // }
+
   const Item = ({ path, name }) => (
     <Link href={path}>
       <a
         className={
           router.pathname == path
-            ? "text1 capitalize py-[3px] px-[23px] bg-red rounded-full transition-colors text-white"
+            ? // checkPath(router.pathname) == path
+              "text1 capitalize py-[3px] px-[23px] bg-red rounded-full transition-colors text-white"
             : "text1 py-[3px] capitalize px-[23px] bg-none rounded-full transition-colors text-black-500"
         }
       >
@@ -19,7 +28,11 @@ export default function Navbar() {
   );
 
   console.log(router.pathname);
+  // /praktikum/siskon
+  // ['/', 'praktikum', '/', 'siskon']
+  // praktikum ==
   console.log(router.asPath);
+  console.log(router.basePath);
 
   return (
     <nav className="border border-b-black-200">

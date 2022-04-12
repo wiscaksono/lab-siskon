@@ -3,6 +3,9 @@ import { useState } from "react";
 
 import Wrapper from "../../../components/Wrapper";
 import TugasRumah from "./tugas-rumah";
+import MateriPendukung from "./materi-pendukung";
+import JadwalPraktikum from "./jadwal-praktikum";
+import TemplateJournal from "./template-journal";
 
 export default function Index() {
   // state
@@ -12,6 +15,12 @@ export default function Index() {
     switch (value) {
       case "tugas rumah":
         return <TugasRumah />;
+      case "materi pendukung":
+        return <MateriPendukung />;
+      case "jadwal praktikum":
+        return <JadwalPraktikum />;
+      case "template journal":
+        return <TemplateJournal />;
       default:
         return "Halaman Tidak Ditemukan";
     }
@@ -40,6 +49,8 @@ export default function Index() {
             <div className="w-2/12 flex gap-[15px] flex-col items-start">
               <SideBtn name="tugas rumah" />
               <SideBtn name="materi pendukung" />
+              <SideBtn name="jadwal praktikum" />
+              <SideBtn name="template journal" />
             </div>
             <div className="w-1/12" />
             <div className="w-9/12">
