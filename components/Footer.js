@@ -34,7 +34,7 @@ export default function Footer() {
 
           <div className="w-[550px] h-[270px] ">
             <iframe
-              frameborder="0"
+              frameBorder="0"
               src="https://www.google.com/maps/embed/v1/place?q=ITPLN&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
               className="w-full h-full rounded-[24px]"
             />

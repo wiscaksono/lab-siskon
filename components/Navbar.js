@@ -5,11 +5,11 @@ export default function Navbar() {
   return (
     <nav className="border border-b-black-200">
       <div className="wrapper flex justify-between items-center py-[23px]">
-        <Link href="/">
+        <Link href="/" passHref>
           <img src="logo.png" alt="" className="cursor-pointer" />
         </Link>
         <div className="flex items-center gap-[32px]">
-          <Link href="/">
+          <Link href="/" passHref>
             <a
               className={
                 router.pathname == "/"
@@ -20,7 +20,7 @@ export default function Navbar() {
               Home
             </a>
           </Link>
-          <Link href="Contact">
+          <Link href="Contact" passHref>
             <a
               className={
                 router.pathname == "/Contact"
@@ -31,7 +31,7 @@ export default function Navbar() {
               Contact
             </a>
           </Link>
-          <Link href="Gallery">
+          <Link href="Gallery" passHref>
             <a
               className={
                 router.pathname == ("/Gallery" || "/Alat")
@@ -42,7 +42,7 @@ export default function Navbar() {
               Gallery
             </a>
           </Link>
-          <Link href="//#praktikum">
+          <Link href="//#praktikum" passHref>
             <a
               className={
                 router.pathname == ("/Siskon" || "Ski")

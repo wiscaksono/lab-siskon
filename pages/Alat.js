@@ -14,7 +14,7 @@ export default function Alat() {
           <div className="flex">
             <div className="w-2/12">
               <div className="mb-[15px]">
-                <Link href="/Gallery">
+                <Link href="/Gallery" passHref>
                   <button>
                     <a
                       className={
@@ -28,7 +28,7 @@ export default function Alat() {
                   </button>
                 </Link>
               </div>
-              <Link href="/Gallery/Alat">
+              <Link href="/Gallery/Alat" passHref>
                 <button>
                   <a
                     className={
