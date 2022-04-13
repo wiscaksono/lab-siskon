@@ -2,17 +2,6 @@ export default function Alat() {
   return (
     <div className="flex gap-[40px] flex-wrap">
       <Image src="img1.jpg" />
-      <Image src="img2.jpg" />
-      <Image src="img3.jpg" />
-      <Image src="img1.jpg" />
-      <Image src="img2.jpg" />
-      <Image src="img3.jpg" />
-      <Image src="img1.jpg" />
-      <Image src="img2.jpg" />
-      <Image src="img3.jpg" />
-      <Image src="img1.jpg" />
-      <Image src="img2.jpg" />
-      <Image src="img3.jpg" />
     </div>
   );
 }
