@@ -6,6 +6,8 @@ import TugasRumah from "./tugas-rumah";
 import MateriPendukung from "./materi-pendukung";
 import JadwalPraktikum from "./jadwal-praktikum";
 import TemplateJournal from "./template-journal";
+import Modul from "./modul";
+import DataPengamatan from "./data-pengamatan";
 
 export default function Index() {
   // state
@@ -15,12 +17,18 @@ export default function Index() {
     switch (value) {
       case "tugas rumah":
         return <TugasRumah />;
+      case "modul":
+        return <Modul />;
       case "materi pendukung":
         return <MateriPendukung />;
       case "jadwal praktikum":
         return <JadwalPraktikum />;
       case "template journal":
         return <TemplateJournal />;
+      case "video materi":
+        return <VideoMateri />;
+      case "data pengamatan":
+        return <DataPengamatan />;
       default:
         return "Halaman Tidak Ditemukan";
     }
@@ -46,13 +54,14 @@ export default function Index() {
         <div className="wrapper">
           <h4 className="text-red mb-[20px]">Sistem Kontrol</h4>
           <div className="flex">
-            <div className="w-2/12 flex gap-[15px] flex-col items-start">
+            <div className="w-3/12 flex gap-[12px] flex-col items-start">
+              <SideBtn name="modul" />
               <SideBtn name="tugas rumah" />
+              <SideBtn name="template journal" />
               <SideBtn name="materi pendukung" />
               <SideBtn name="jadwal praktikum" />
-              <SideBtn name="template journal" />
+              <SideBtn name="data pengamatan" />
             </div>
-            <div className="w-1/12" />
             <div className="w-9/12">
               {/* jalanin render func */}
               {render(active)}

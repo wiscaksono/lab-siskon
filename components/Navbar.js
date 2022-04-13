@@ -38,12 +38,18 @@ export default function Navbar() {
     <nav className="border border-b-black-200">
       <div className="wrapper flex justify-between items-center py-[23px]">
         <Link href="/" passHref>
-          <img src="logo.png" alt="" className="cursor-pointer" />
+          <div className="w-[80px]">
+            <img
+              src="logo.svg"
+              alt=""
+              className="cursor-pointer w-full h-full"
+            />
+          </div>
         </Link>
         <div className="flex items-center gap-[32px]">
           <Item path="/" name="home" />
           <Item path="/contact" name="contact" />
-          <Item path="/praktikum" name="praktikum" />
+          <Item path="/gallery" name="Gallery" />
         </div>
       </div>
     </nav>
