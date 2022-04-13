@@ -23,7 +23,7 @@ export default function Index() {
             </p>
           </div>
           <div className="w-[483px] h-[469px] flex-none">
-            <img src="hero-image.png" alt="" className="w-full h-full" />
+            <img src="hero-image.svg" alt="" className="w-full h-full" />
           </div>
         </div>
       </section>
@@ -32,7 +32,7 @@ export default function Index() {
         <div className="wrapper">
           <h3 className="text-red text-center mb-[40px]">Pilih Praktikum</h3>
           <div className="flex justify-between">
-            <Link href="/praktikum/ski" passHref>
+            <Link href="/ski" passHref>
               <button className="bg-ski-btn px-[144px] py-[26px] rounded-[20px] hover:shadow-red hover:shadow-2xl transition-colors">
                 <p className="subhead1 w-[262px] text-white">
                   Sistem Kontrol Industri
@@ -41,7 +41,7 @@ export default function Index() {
             </Link>
             <div className="">
               <div className="bg-siskon-btn rounded-[20px]">
-                <Link href="praktikum/siskon">
+                <Link href="/siskon">
                   <button className="px-[144px] py-[53px]">
                     <p className="subhead1 w-[262px] text-white">
                       Sistem Kontrol

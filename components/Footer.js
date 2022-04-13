@@ -14,9 +14,8 @@ export default function Footer() {
                   <a className="text1 text-white">labsiskon_fket.itpln</a>
                 </Link>
               </div>
-
-              <div className="flex items-start gap-[18px]">
-                <div className="w-[16.34px] h-[19.04px]">
+              <div className="flex items-center gap-[18px]">
+                <div className="w-[19.04px] h-[19.04px]">
                   <img src="location.svg" alt="" className="w-full h-full" />
                 </div>
                 <p className="text1 text-white flex-1">

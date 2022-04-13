@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 
-import Wrapper from "../../../components/Wrapper";
+import Wrapper from "../../components/Wrapper";
 import TugasRumah from "./tugas-rumah";
 import MateriPendukung from "./materi-pendukung";
 import JadwalPraktikum from "./jadwal-praktikum";
