@@ -8,6 +8,7 @@ import JadwalPraktikum from "./jadwal-praktikum";
 import TemplateJournal from "./template-journal";
 import Modul from "./modul";
 import DataPengamatan from "./data-pengamatan";
+import SourceCode from "./source-code";
 
 export default function Index() {
   // state
@@ -25,10 +26,10 @@ export default function Index() {
         return <JadwalPraktikum />;
       case "template journal":
         return <TemplateJournal />;
-      case "video materi":
-        return <VideoMateri />;
       case "data pengamatan":
         return <DataPengamatan />;
+      case "source code":
+        return <SourceCode />;
       default:
         return "Halaman Tidak Ditemukan";
     }
@@ -61,6 +62,7 @@ export default function Index() {
               <SideBtn name="materi pendukung" />
               <SideBtn name="jadwal praktikum" />
               <SideBtn name="data pengamatan" />
+              <SideBtn name="source code" />
             </div>
             <div className="w-9/12">
               {/* jalanin render func */}

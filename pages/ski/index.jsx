@@ -3,11 +3,9 @@ import { useState } from "react";
 
 import Wrapper from "../../components/Wrapper";
 import TugasRumah from "./tugas-rumah";
-import MateriPendukung from "./materi-pendukung";
-import JadwalPraktikum from "./jadwal-praktikum";
-import TemplateJournal from "./template-journal";
 import Modul from "./modul";
-import DataPengamatan from "./data-pengamatan";
+import Software from "./software";
+import JadwalPraktikum from "./jadwal-praktikum";
 
 export default function Index() {
   // state
@@ -19,16 +17,10 @@ export default function Index() {
         return <TugasRumah />;
       case "modul":
         return <Modul />;
-      case "materi pendukung":
-        return <MateriPendukung />;
+      case "software":
+        return <Software />;
       case "jadwal praktikum":
         return <JadwalPraktikum />;
-      case "template journal":
-        return <TemplateJournal />;
-      case "video materi":
-        return <VideoMateri />;
-      case "data pengamatan":
-        return <DataPengamatan />;
       default:
         return "Halaman Tidak Ditemukan";
     }

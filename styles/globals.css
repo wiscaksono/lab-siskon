@@ -47,6 +47,10 @@ html {
   .bg-red {
     @apply bg-[#ED2227] sspro;
   }
+
+  .bg-white {
+    @apply bg-[#FFFFFF] sspro;
+  }
 }
 
 .poppins {
