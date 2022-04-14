@@ -37,9 +37,11 @@ export default function Gallery() {
     <Wrapper>
       <section className="mt-[112px] mb-[161px]">
         <div className="wrapper">
-          <h4 className="text-red mb-[20px]">Gallery</h4>
-          <div className="flex">
-            <div className="w-3/12 flex gap-[12px] flex-col items-start">
+          <h4 className="text-red mb-[20px] text-center lg:text-left">
+            Gallery
+          </h4>
+          <div className="flex flex-col lg:flex-row">
+            <div className="lg:w-3/12 flex lg:gap-[12px] gap-[8px] flex-col lg:items-start items-center mb-[60px] lg:mb-0">
               <SideBtn name="dokumentasi" />
               <SideBtn name="alat" />
             </div>

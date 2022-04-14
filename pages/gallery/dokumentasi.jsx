@@ -1,7 +1,7 @@
 /* eslint-disable */
 export default function Dokumentasi() {
   return (
-    <div className="flex gap-[40px] flex-wrap">
+    <div className="grid lg:grid-cols-2 gap-[40px] grid-cols-1">
       <Image src="img1.jpg" />
       <Image src="img2.jpg" />
       <Image src="img3.jpg" />
@@ -13,7 +13,7 @@ export default function Dokumentasi() {
 }
 
 const Image = ({ src }) => (
-  <div className="w-[403px] h-[327px] bg-clip-padding">
+  <div className="lg:w-[403px] lg:h-[327px] bg-clip-padding w-[320px] h-[260px]">
     <img
       src={`/gallery/dokumentasi/${src}`}
       className="w-full h-full object-cover"
