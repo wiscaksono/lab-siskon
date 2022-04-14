@@ -23,13 +23,15 @@ export default function Software() {
 const Article = ({ title, paragraph, img, link }) => {
   return (
     <div className="mb-[70px]">
-      <p className="subhead2 mb-[26px]">{title}</p>
-      <div className="flex items-center justify-center flex-col mb-[26px]">
+      <p className="lg:subhead2 mb-[26px] subhead4 text-center lg:text-left">
+        {title}
+      </p>
+      <div className="flex items-center justify-center flex-col mb-[26px] mx-[20px] lg:mx-0">
         <img src={img} alt="" className="mb-[26px]" />
         <p className="text-justify text-[18px] sspro">{paragraph}</p>
       </div>
       <Link href={link}>
-        <button className="text1 text-white capitalize py-[12px] px-[32px] block bg-red rounded-[5px] border border-none">
+        <button className="text1 text-white capitalize py-[12px] px-[32px] block bg-red rounded-[5px] border border-none mx-auto lg:mx-0">
           <a target="_blank">Download</a>
         </button>
       </Link>

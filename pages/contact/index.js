@@ -6,8 +6,10 @@ export default function Index() {
     <Wrapper>
       <section className="mt-[112px] mb-[161px]">
         <div className="wrapper">
-          <h4 className="text-red mb-[20px]">Contact Person</h4>
-          <div className="grid grid-cols-4 gap-[40px] ">
+          <h4 className="text-red lg:mb-[20px] mb-[25px] text-center px-[98px] lg:px-0">
+            Contact Person
+          </h4>
+          <div className="grid lg:grid-cols-4 gap-[40px] grid-cols-1 mx-[50px]">
             <Cards
               img="contact-person/wisnu.png"
               nama="Wisnu Wicaksono"

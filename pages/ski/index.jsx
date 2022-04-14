@@ -42,17 +42,19 @@ export default function Index() {
 
   return (
     <Wrapper>
-      <section className="mt-[112px] mb-[161px]">
+      <section className="mt-[112px] lg:mb-[161px]">
         <div className="wrapper">
-          <h4 className="text-red mb-[20px]">Sistem Kontrol Industri</h4>
-          <div className="flex">
-            <div className="w-3/12 flex gap-[12px] flex-col items-start">
+          <h4 className="text-red mb-[20px] text-center lg:text-left">
+            Sistem Kontrol Industri
+          </h4>
+          <div className="flex flex-col lg:flex-row">
+            <div className="lg:w-3/12 flex lg:gap-[12px] gap-[8px] flex-col lg:items-start items-center mb-[60px] lg:mb-0">
               <SideBtn name="modul" />
               <SideBtn name="tugas rumah" />
               <SideBtn name="jadwal praktikum" />
               <SideBtn name="software" />
             </div>
-            <div className="w-9/12">
+            <div className="lg:w-9/12">
               {/* jalanin render func */}
               {render(active)}
             </div>
