@@ -60,9 +60,9 @@ function MobileNav({ open, setOpen }) {
       } transition-transform duration-300 ease-in-out filter drop-shadow-md `}
     >
       <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20">
-        <a href="/" className="w-[80px]">
+        <Link href="/" className="w-[80px]">
           <img src="logo.svg" alt="" className="w-full h-full" />
-        </a>
+        </Link>
       </div>
       <div className="flex flex-col mx-4 ">
         <Item path="/" name="home" />
@@ -98,9 +98,9 @@ export default function Navbar() {
       <nav className="flex filter  bg-white px-4 py-4 h-20 items-center wrapper">
         <MobileNav open={open} setOpen={setOpen} />
         <div className="w-3/12 flex items-center">
-          <a href="/" className="w-[80px]">
+          <Link href="/" className="w-[80px]">
             <img src="logo.svg" alt="" className="w-full h-full" />
-          </a>
+          </Link>
         </div>
         <div className="w-9/12 flex justify-end items-center">
           <div
