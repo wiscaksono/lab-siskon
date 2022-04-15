@@ -76,16 +76,16 @@ export default function Navbar() {
 
   return (
     <div className="border-b border-black-200">
-      <nav className="bg-white wrapper  flex h-20 items-center px-4 py-4 filter">
+      <nav className="bg-white wrapper  flex h-14 items-center px-4 py-4 filter">
         <MobileNav open={open} setOpen={setOpen} />
         <div className="flex w-3/12 items-center">
-          <Link href="/" className="w-[80px]">
-            <img src="logo.svg" alt="" className="w-[80px]" />
+          <Link href="/" className="">
+            <img src="logo.svg" alt="" className="w-[55px]" />
           </Link>
         </div>
         <div className="flex w-9/12 items-center justify-end">
           <div
-            className="relative z-50 flex h-8 w-8 flex-col items-center justify-between md:hidden"
+            className="relative z-50 flex h-5 w-5 flex-col items-center justify-between md:hidden"
             onClick={() => {
               setOpen(!open);
             }}
