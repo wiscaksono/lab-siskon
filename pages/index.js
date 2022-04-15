@@ -44,13 +44,13 @@ export default function Index() {
           </h4>
           <div className="flex flex-col justify-between gap-[37px] lg:flex-row lg:gap-[40px]">
             <Link href="/ski">
-              <button className="lg:subhead1 text-white subhead4 mx-[20px] rounded-[20px] bg-ski-btn bg-cover bg-no-repeat py-[19px] px-[85px] shadow-xl lg:mx-0 lg:py-[26px] lg:px-[144px]">
+              <button className="lg:subhead1 text-white subhead4 mx-[20px] rounded-[20px] bg-ski-btn bg-cover bg-no-repeat py-[19px] px-[85px] hover:shadow-xl transition-shadow lg:mx-0 lg:py-[26px] lg:px-[144px]">
                 <p className="mb-0 lg:mb-3.5">Sistem Kontrol</p>
                 <p>Industri</p>
               </button>
             </Link>
             <Link href="/ski">
-              <button className="lg:subhead1 text-white subhead4 mx-[20px] rounded-[20px] bg-siskon-btn bg-cover bg-no-repeat py-[32px] px-[85px] shadow-xl lg:mx-0 lg:py-[26px] lg:px-[144px]">
+              <button className="lg:subhead1 text-white subhead4 mx-[20px] rounded-[20px] bg-siskon-btn bg-cover bg-no-repeat py-[32px] px-[85px] hover:shadow-xl transition-shadow lg:mx-0 lg:py-[26px] lg:px-[144px]">
                 <p>Sistem Kontrol</p>
               </button>
             </Link>

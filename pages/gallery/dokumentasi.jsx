@@ -1,7 +1,7 @@
 /* eslint-disable */
 export default function Dokumentasi() {
   return (
-    <div className="grid lg:grid-cols-2 gap-[40px] grid-cols-1">
+    <div className="grid grid-cols-1 gap-[40px] lg:grid-cols-2">
       <Image src="img1.jpg" />
       <Image src="img2.jpg" />
       <Image src="img3.jpg" />
@@ -13,10 +13,10 @@ export default function Dokumentasi() {
 }
 
 const Image = ({ src }) => (
-  <div className="lg:w-[403px] lg:h-[327px] bg-clip-padding w-[320px] h-[260px]">
+  <div className="h-[260px] w-[320px] bg-clip-padding lg:h-[327px] lg:w-[403px]">
     <img
       src={`/gallery/dokumentasi/${src}`}
-      className="w-full h-full object-cover"
+      className="h-full w-full object-cover"
     />
   </div>
 );
